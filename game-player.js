@@ -16198,7 +16198,7 @@ function playMove() {
   return true;
 }
 
-function playGame() {
+window.playGame = function() {
   const i = setInterval(() => {
     const result = playMove();
     if (!result)
