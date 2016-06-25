@@ -16198,10 +16198,10 @@ function playMove() {
   return true;
 }
 
-window.playGame = function() {
+window.playGame = function(interval) {
   const i = setInterval(() => {
     const result = playMove();
     if (!result)
       clearInterval(i);
-  }, 100);
+  }, interval);
 }
